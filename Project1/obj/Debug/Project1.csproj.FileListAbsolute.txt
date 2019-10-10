@@ -11,9 +11,7 @@ C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Project1\obj\Debug\Project1.csproj.CopyComplete
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Project1\obj\Debug\Project1.exe
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Project1\obj\Debug\Project1.pdb
-C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Project1\bin\Debug\LiveCharts.dll
-C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Project1\bin\Debug\LiveCharts.Wpf.dll
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Project1\obj\Debug\Project1.UserControl1.resources
-C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Project1\bin\Debug\LollipoUi.dll
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Project1\bin\Debug\MaterialSkin.dll
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Project1\obj\Debug\Project1.csprojAssemblyReference.cache
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Project1\bin\Debug\LollipoUi.dll

@@ -115,11 +115,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8_gender_neutral_user_48px_1.png" />
+    <None Include="Resources\icons8_menu_48px.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="LollipoUi.dll" />
-    <None Include="Resources\icons8_menu_48px.png" />
+    <None Include="Resources\icons8_line_chart.ico" />
+    <None Include="Resources\icons8_combo_chart_48px.png" />
+    <None Include="Resources\icons8_trash_48px.png" />
+    <None Include="Resources\icons8_edit_property_48px_1.png" />
+    <None Include="Resources\icons8_save_48px_1.png" />
+    <None Include="Resources\icons8_gender_neutral_user_48px_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

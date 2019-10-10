@@ -18,7 +18,10 @@ namespace Project1
         {
             InitializeComponent();
             PanelWidth = panel2.Width;
-            Hidden = false;
+            Hidden = false;            
+        }
+        public void XoaTabControl()
+        {
             this.tabControl1.TabPages.Remove(tabPage1);
             this.tabControl1.TabPages.Remove(tabPage2);
             this.tabControl1.TabPages.Remove(tabPage3);
@@ -32,21 +35,22 @@ namespace Project1
         private void button1_Click(object sender, EventArgs e)
         {
             MoveIndicator((Control)sender);
+            XoaTabControl();
+            this.tabControl1.TabPages.Add(tabPage1);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             MoveIndicator((Control)sender);
+            XoaTabControl();
+            this.tabControl1.TabPages.Add(tabPage2);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             MoveIndicator((Control)sender);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            MoveIndicator((Control)sender);
+            XoaTabControl();
+            this.tabControl1.TabPages.Add(tabPage3);
         }
 
         private void button5_Click(object sender, EventArgs e)

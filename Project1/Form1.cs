@@ -18,7 +18,9 @@ namespace Project1
         {
             InitializeComponent();
             PanelWidth = panel2.Width;
-            Hidden = false;            
+            Hidden = false;
+            XoaTabControl();
+            this.tabControl1.TabPages.Add(tabPage1);
         }
         public void XoaTabControl()
         {
@@ -53,16 +55,12 @@ namespace Project1
             this.tabControl1.TabPages.Add(tabPage3);
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            timer1.Start();
-        }
-
+       
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             if(Hidden)
             {
-                panel2.Width = panel2.Width + 10;
+                panel2.Width = panel2.Width + 7;
                 if(panel2.Width >= PanelWidth)
                 {
                     timer1.Stop();
@@ -72,7 +70,7 @@ namespace Project1
             }
             else
             {
-                panel2.Width = panel2.Width - 10;
+                panel2.Width = panel2.Width - 7;
                 if (panel2.Width <= 50)
                 {
                     timer1.Stop();
@@ -80,6 +78,11 @@ namespace Project1
                     this.Refresh();
                 }
             }
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
         }
     }
 }

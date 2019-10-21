@@ -1,0 +1,12 @@
+C:\Users\votan\source\repos\Do_An_1\bin\Debug\Do_An_1.exe.config
+C:\Users\votan\source\repos\Do_An_1\bin\Debug\Do_An_1.exe
+C:\Users\votan\source\repos\Do_An_1\bin\Debug\Do_An_1.pdb
+C:\Users\votan\source\repos\Do_An_1\obj\Debug\Do_An_1.csprojAssemblyReference.cache
+C:\Users\votan\source\repos\Do_An_1\obj\Debug\Do_An_1.Form1.resources
+C:\Users\votan\source\repos\Do_An_1\obj\Debug\Do_An_1.Properties.Resources.resources
+C:\Users\votan\source\repos\Do_An_1\obj\Debug\Do_An_1.csproj.GenerateResource.cache
+C:\Users\votan\source\repos\Do_An_1\obj\Debug\Do_An_1.exe
+C:\Users\votan\source\repos\Do_An_1\obj\Debug\Do_An_1.pdb
+C:\Users\votan\source\repos\Do_An_1\bin\Debug\VisualReactiveWinForms.dll
+C:\Users\votan\source\repos\Do_An_1\bin\Debug\VisualReactiveWinForms.xml
+C:\Users\votan\source\repos\Do_An_1\obj\Debug\Do_An_1.csproj.CopyComplete

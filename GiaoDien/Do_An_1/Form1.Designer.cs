@@ -40,7 +40,6 @@
             this.panelPhu = new System.Windows.Forms.Panel();
             this.btnExcel = new System.Windows.Forms.Button();
             this.btnGraph = new System.Windows.Forms.Button();
-            this.btnPin = new System.Windows.Forms.Button();
             this.btnEditGrade = new System.Windows.Forms.Button();
             this.btnEditStudent = new System.Windows.Forms.Button();
             this.btnAddStudent = new System.Windows.Forms.Button();
@@ -134,6 +133,8 @@
             this.txtLineGrade2 = new System.Windows.Forms.TextBox();
             this.txtLineGrade1 = new System.Windows.Forms.TextBox();
             this.btnBackGrade = new System.Windows.Forms.Button();
+            this.btnPin = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSmall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -184,6 +185,7 @@
             this.btnHelp.Text = " Help";
             this.btnHelp.UseVisualStyleBackColor = false;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            this.btnHelp.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnHelp_MouseMove);
             // 
             // btnSetting
             // 
@@ -200,6 +202,7 @@
             this.btnSetting.Text = "    Setting";
             this.btnSetting.UseVisualStyleBackColor = false;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
+            this.btnSetting.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnSetting_MouseMove);
             // 
             // btnGrade
             // 
@@ -216,6 +219,7 @@
             this.btnGrade.Text = "   Grade";
             this.btnGrade.UseVisualStyleBackColor = false;
             this.btnGrade.Click += new System.EventHandler(this.btnGrade_Click);
+            this.btnGrade.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnGrade_MouseMove);
             // 
             // btnReport
             // 
@@ -232,6 +236,7 @@
             this.btnReport.Text = "      Reports";
             this.btnReport.UseVisualStyleBackColor = false;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            this.btnReport.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnReport_MouseMove);
             // 
             // pictureBox1
             // 
@@ -257,6 +262,7 @@
             this.btnStudent.Text = "       Students";
             this.btnStudent.UseVisualStyleBackColor = false;
             this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
+            this.btnStudent.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnStudent_MouseMove);
             // 
             // btnDashboard
             // 
@@ -274,6 +280,7 @@
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            this.btnDashboard.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnDashboard_MouseMove);
             // 
             // panelPhu
             // 
@@ -322,16 +329,6 @@
             this.btnGraph.Text = "      Graph";
             this.btnGraph.UseVisualStyleBackColor = false;
             this.btnGraph.Click += new System.EventHandler(this.btnGraph_Click);
-            // 
-            // btnPin
-            // 
-            this.btnPin.Image = global::Do_An_1.Properties.Resources.pin_30px;
-            this.btnPin.Location = new System.Drawing.Point(166, 0);
-            this.btnPin.Name = "btnPin";
-            this.btnPin.Size = new System.Drawing.Size(40, 37);
-            this.btnPin.TabIndex = 4;
-            this.btnPin.UseVisualStyleBackColor = true;
-            this.btnPin.Click += new System.EventHandler(this.btnPin_Click);
             // 
             // btnEditGrade
             // 
@@ -475,6 +472,7 @@
             this.panelStudent.Size = new System.Drawing.Size(1193, 950);
             this.panelStudent.TabIndex = 2;
             this.panelStudent.Click += new System.EventHandler(this.panelStudent_Click);
+            this.panelStudent.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelStudent_MouseMove);
             // 
             // btnTTDelStudent
             // 
@@ -796,6 +794,7 @@
             this.panelGrade.Name = "panelGrade";
             this.panelGrade.Size = new System.Drawing.Size(1193, 978);
             this.panelGrade.TabIndex = 3;
+            this.panelGrade.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelGrade_MouseMove);
             // 
             // label10
             // 
@@ -1204,6 +1203,7 @@
             this.btnDeleteGra.TabIndex = 29;
             this.btnDeleteGra.Text = "         Delete";
             this.btnDeleteGra.UseVisualStyleBackColor = true;
+            this.btnDeleteGra.Click += new System.EventHandler(this.btnDeleteGra_Click);
             // 
             // btnEditGra
             // 
@@ -1216,6 +1216,7 @@
             this.btnEditGra.TabIndex = 28;
             this.btnEditGra.Text = "      Edit";
             this.btnEditGra.UseVisualStyleBackColor = true;
+            this.btnEditGra.Click += new System.EventHandler(this.btnEditGra_Click);
             // 
             // btnAddGra
             // 
@@ -1228,6 +1229,7 @@
             this.btnAddGra.TabIndex = 27;
             this.btnAddGra.Text = "      Add";
             this.btnAddGra.UseVisualStyleBackColor = true;
+            this.btnAddGra.Click += new System.EventHandler(this.btnAddGra_Click);
             // 
             // txtLineGrade5
             // 
@@ -1330,6 +1332,24 @@
             this.btnBackGrade.TabIndex = 0;
             this.btnBackGrade.UseVisualStyleBackColor = false;
             // 
+            // btnPin
+            // 
+            this.btnPin.Image = global::Do_An_1.Properties.Resources.pin_30px;
+            this.btnPin.Location = new System.Drawing.Point(166, 0);
+            this.btnPin.Name = "btnPin";
+            this.btnPin.Size = new System.Drawing.Size(40, 37);
+            this.btnPin.TabIndex = 4;
+            this.btnPin.UseVisualStyleBackColor = true;
+            this.btnPin.Click += new System.EventHandler(this.btnPin_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1340,10 +1360,13 @@
             this.Controls.Add(this.panelStudent);
             this.Controls.Add(this.panelPhu);
             this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.Form1_Click);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.panelMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picSmall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1354,6 +1377,7 @@
             this.panelGrade.ResumeLayout(false);
             this.panelGrade.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1378,7 +1402,6 @@
         private System.Windows.Forms.Button btnGraph;
         private System.Windows.Forms.Button btnExcel;
         private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button btnPin;
         private System.Windows.Forms.PictureBox picSmall;
         private System.Windows.Forms.Panel panelStudent;
         private System.Windows.Forms.Button btnBackStudent;
@@ -1465,6 +1488,8 @@
         private System.Windows.Forms.TextBox txtMath3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtMath2;
+        private System.Windows.Forms.Button btnPin;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
 

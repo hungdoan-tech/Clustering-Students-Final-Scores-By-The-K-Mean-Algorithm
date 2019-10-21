@@ -434,6 +434,10 @@ namespace Do_An_1
             btnDeleteGra.Hide();
             //Show button Edit
             btnEditGra.Show();
+            //Hiển thị panelGrade
+            panelGrade.Show();
+            //Hiển thị ở vị trí
+            panelGrade.Location = new Point(568, 0);
         }
 
         private void btnDelGrade_Click(object sender, EventArgs e)
@@ -447,8 +451,12 @@ namespace Do_An_1
             //Ẩn các button edit và add
             btnEditGra.Hide();
             btnAddGra.Hide();
+            //Hiển thị panelGrade
+            panelGrade.Show();
             //Show button Del
             btnDeleteGra.Show();
+            //Hiển thị ở vị trí
+            panelGrade.Location = new Point(568, 0);
 
         }
 
@@ -599,6 +607,108 @@ namespace Do_An_1
             panelMain.Width = 60;
             panelPhu.Location = new Point(60, 0);
             picSmall.Show();
+        }
+
+        private void btnStudent_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Hiện panel chính và trả panel phụ về vj trí cũ
+            panelMain.Width = 230;
+            panelPhu.Location = new Point(231, 0);
+            picSmall.Hide();
+            //Hiển thị ở vị trí
+            panelGrade.Location = new Point(568, 0);
+            panelStudent.Location = new Point(568, 0);
+        }
+        private void btnDashboard_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Hiện panel chính và trả panel phụ về vj trí cũ
+            panelMain.Width = 230;
+            panelPhu.Location = new Point(231, 0);
+            picSmall.Hide();
+            //Hiển thị ở vị trí
+            panelGrade.Location = new Point(568, 0);
+            panelStudent.Location = new Point(568, 0);
+        }
+
+        private void btnGrade_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Hiện panel chính và trả panel phụ về vj trí cũ
+            panelMain.Width = 230;
+            panelPhu.Location = new Point(231, 0);
+            picSmall.Hide();
+            //Hiển thị ở vị trí
+            panelGrade.Location = new Point(568, 0);
+            panelStudent.Location = new Point(568, 0);
+        }
+
+        private void btnReport_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Hiện panel chính và trả panel phụ về vj trí cũ
+            panelMain.Width = 230;
+            panelPhu.Location = new Point(231, 0);
+            picSmall.Hide();
+
+        }
+
+        private void btnSetting_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Hiện panel chính và trả panel phụ về vj trí cũ
+            panelMain.Width = 230;
+            panelPhu.Location = new Point(231, 0);
+            picSmall.Hide();
+        }
+
+        private void btnHelp_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Hiện panel chính và trả panel phụ về vj trí cũ
+            panelMain.Width = 230;
+            panelPhu.Location = new Point(231, 0);
+            picSmall.Hide();
+        }
+
+        private void btnDeleteGra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditGra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddGra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            panelMain.Width = 60;
+            panelPhu.Location = new Point(60, 0);
+            picSmall.Show();
+            //Vi trí mới của panelStudent, panelGrade.
+            panelGrade.Location = new Point(442,0);
+            panelStudent.Location = new Point(442, 0);
+        }
+
+        private void panelStudent_MouseMove(object sender, MouseEventArgs e)
+        {
+            panelMain.Width = 60;
+            panelPhu.Location = new Point(60, 0);
+            picSmall.Show();
+            //Vi trí mới của panelStudent, panelGrade.
+            panelGrade.Location = new Point(442, 0);
+            panelStudent.Location = new Point(442, 0);
+        }
+
+        private void panelGrade_MouseMove(object sender, MouseEventArgs e)
+        {
+            panelMain.Width = 60;
+            panelPhu.Location = new Point(60, 0);
+            picSmall.Show();
+            //Vi trí mới của panelStudent, panelGrade.
+            panelGrade.Location = new Point(442, 0);
+            panelStudent.Location = new Point(442, 0);
         }
 
     }

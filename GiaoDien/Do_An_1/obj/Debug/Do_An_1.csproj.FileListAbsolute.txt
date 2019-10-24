@@ -10,3 +10,15 @@ C:\Users\votan\source\repos\Do_An_1\obj\Debug\Do_An_1.pdb
 C:\Users\votan\source\repos\Do_An_1\bin\Debug\VisualReactiveWinForms.dll
 C:\Users\votan\source\repos\Do_An_1\bin\Debug\VisualReactiveWinForms.xml
 C:\Users\votan\source\repos\Do_An_1\obj\Debug\Do_An_1.csproj.CopyComplete
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\bin\Debug\Do_An_1.exe.config
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\bin\Debug\Do_An_1.exe
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\bin\Debug\Do_An_1.pdb
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\bin\Debug\VisualReactiveWinForms.dll
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\bin\Debug\VisualReactiveWinForms.xml
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\obj\Debug\Do_An_1.csprojAssemblyReference.cache
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\obj\Debug\Do_An_1.Form1.resources
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\obj\Debug\Do_An_1.Properties.Resources.resources
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\obj\Debug\Do_An_1.csproj.GenerateResource.cache
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\obj\Debug\Do_An_1.csproj.CopyComplete
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\obj\Debug\Do_An_1.exe
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\GiaoDien\Do_An_1\obj\Debug\Do_An_1.pdb

@@ -58,7 +58,7 @@
     <Compile Include="DomainClass\Coordinate.cs" />
     <Compile Include="DomainClass\Department.cs" />
     <Compile Include="DomainClass\Grade.cs" />
-    <Compile Include="DomainClass\IGroup.cs" />
+    <Compile Include="DomainClass\MyGrouping.cs" />
     <Compile Include="DomainClass\Professor.cs" />
     <Compile Include="DomainClass\Student.cs" />
     <Compile Include="DomainClass\Subject.cs" />

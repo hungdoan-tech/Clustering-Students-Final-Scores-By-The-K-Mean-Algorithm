@@ -31,7 +31,7 @@ namespace LearningAgain
             modelBuilder.Entity<DomainClass.Class>().HasKey(s => s.ClassID);
             modelBuilder.Entity<Grade>().HasKey(s => new { s.StudentID, s.ClassID });
 
-            // Foreign Key Constraint`
+            // Foreign Key Constraint
             modelBuilder.Entity<Department>().Property(p => p.DepartmentID).HasColumnOrder(100);
             modelBuilder.Entity<Student>()
                 .HasRequired<Department>(s => s.Department)

@@ -193,6 +193,16 @@ namespace Do_An_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_text_64px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_text_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap id_male_student_60px {
             get {
                 object obj = ResourceManager.GetObject("id_male_student_60px", resourceCulture);

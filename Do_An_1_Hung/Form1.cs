@@ -134,12 +134,16 @@ namespace Do_An_1
             //Ẩn panel grade    
             using (var ctx = new UniversityContext())
             {
-                //var x = new Department() {
-                //    DepartmentID = 300, DeparmentName = "abcxyz", PhoneNumber = "978987988"
-                //};
-                //ctx.Departments.Add(x);
-                //ctx.SaveChanges();
+                var x = new Department()
+                {
+                    DepartmentID = 300,
+                    DeparmentName = "abcxyz",
+                    PhoneNumber = "978987988"
+                };
+                ctx.Departments.Add(x);
+                ctx.SaveChanges();
             }
+            MessageBox.Show("Done");
         }
         private void btnDashboard_Click(object sender, EventArgs e)
         {

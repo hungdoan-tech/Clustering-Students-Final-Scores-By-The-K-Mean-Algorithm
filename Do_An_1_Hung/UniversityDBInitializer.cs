@@ -48,26 +48,27 @@ namespace Do_An_1
             // Projessor SeedData
             List<Professor> TempProfessor = new List<Professor>()
             {
-                new Professor{ ProfessorID=1100,ProfessorName= "Nhan Xuan Thuy",Password="10000000" },
-                new Professor{ ProfessorID=1101,ProfessorName= "Truong Bao Thu",Password="10000001" },
-                new Professor{ ProfessorID=1102,ProfessorName= "Nhan Xuan Mai",Password="10000002" },
-                new Professor{ ProfessorID=1103,ProfessorName= "Nguyen Ngoc Mai",Password="10000003" },
-                new Professor{ ProfessorID=1104,ProfessorName= "Kim Bao Quynh",Password="10000004" },
-                new Professor{ ProfessorID=1105,ProfessorName= "Nguyen Thien Anh",Password="10000005" },
-                new Professor{ ProfessorID=1106,ProfessorName= "Truong Bao Thu",Password="10000006" },
-                new Professor{ ProfessorID=1107,ProfessorName= "Mai Minh Vy",Password="10000007" },
-                new Professor{ ProfessorID=1108,ProfessorName= "Huynh Kim Nhi",Password="10000008" },
-                new Professor{ ProfessorID=1109,ProfessorName= "Mai Thien Nhi",Password="10000009" },
-                new Professor{ ProfessorID=1110,ProfessorName= "Doan Thien Kim",Password="10000010" },
-                new Professor{ ProfessorID=1111,ProfessorName= "Kim Bich Vy",Password="10000011" },
-                new Professor{ ProfessorID=1112,ProfessorName= "Luong Bao Kim",Password="10000012" },
-                new Professor{ ProfessorID=1113,ProfessorName= "Nguyen Ngoc Anh",Password="10000013" },
-                new Professor{ ProfessorID=1114,ProfessorName= "Phan Chau Tan",Password="10000014" },
-                new Professor{ ProfessorID=1115,ProfessorName= "Do Nhu Quynh",Password="10000015" },
-                new Professor{ ProfessorID=1116,ProfessorName= "Doan Quoc Hung",Password="10000016" },
-                new Professor{ ProfessorID=1117,ProfessorName= "Doan Vinh Hung",Password="10000017" },
-                new Professor{ ProfessorID=1118,ProfessorName= "Luong Bao Chau",Password="10000018" },
-                new Professor{ ProfessorID=1119,ProfessorName= "Tran Cong Danh",Password="10000019" }
+                new Professor{ ProfessorID=1100,ProfessorName= "Nhan Xuan Thuy",Password="10000000",IsAdmin = false},
+                new Professor{ ProfessorID=1101,ProfessorName= "Truong Bao Thu",Password="10000001",IsAdmin = false},
+                new Professor{ ProfessorID=1102,ProfessorName= "Nhan Xuan Mai",Password="10000002",IsAdmin = false},
+                new Professor{ ProfessorID=1103,ProfessorName= "Nguyen Ngoc Mai",Password="10000003",IsAdmin = false},
+                new Professor{ ProfessorID=1104,ProfessorName= "Kim Bao Quynh",Password="10000004",IsAdmin = false},
+                new Professor{ ProfessorID=1105,ProfessorName= "Nguyen Thien Anh",Password="10000005",IsAdmin = false},
+                new Professor{ ProfessorID=1106,ProfessorName= "Truong Bao Thu",Password="10000006",IsAdmin = false},
+                new Professor{ ProfessorID=1107,ProfessorName= "Mai Minh Vy",Password="10000007",IsAdmin = false},
+                new Professor{ ProfessorID=1108,ProfessorName= "Huynh Kim Nhi",Password="10000008",IsAdmin = false},
+                new Professor{ ProfessorID=1109,ProfessorName= "Mai Thien Nhi",Password="10000009",IsAdmin = false},
+                new Professor{ ProfessorID=1110,ProfessorName= "Doan Thien Kim",Password="10000010",IsAdmin = false},
+                new Professor{ ProfessorID=1111,ProfessorName= "Kim Bich Vy",Password="10000011",IsAdmin = false},
+                new Professor{ ProfessorID=1112,ProfessorName= "Luong Bao Kim",Password="10000012",IsAdmin = false},
+                new Professor{ ProfessorID=1113,ProfessorName= "Nguyen Ngoc Anh",Password="10000013",IsAdmin = false},
+                new Professor{ ProfessorID=1114,ProfessorName= "Phan Chau Tan",Password="10000014",IsAdmin = false},
+                new Professor{ ProfessorID=1115,ProfessorName= "Do Nhu Quynh",Password="10000015",IsAdmin = false},
+                new Professor{ ProfessorID=1116,ProfessorName= "Doan Quoc Hung",Password="10000016",IsAdmin = false},
+                new Professor{ ProfessorID=1117,ProfessorName= "Doan Vinh Hung",Password="10000017",IsAdmin = false},
+                new Professor{ ProfessorID=1118,ProfessorName= "Luong Bao Chau",Password="10000018",IsAdmin = false},
+                new Professor{ ProfessorID=1119,ProfessorName= "Tran Cong Danh",Password="10000019",IsAdmin = false},
+                new Professor{ ProfessorID=1120,ProfessorName= "Administrator",Password="10000020",IsAdmin = true}
             };
             context.Professors.AddRange(TempProfessor);
 

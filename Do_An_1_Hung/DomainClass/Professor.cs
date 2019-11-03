@@ -13,6 +13,7 @@ namespace Do_An_1.DomainClass
         public int ProfessorID { get; set; }
         public string ProfessorName { get; set; }
         public string Password { get; set; }
+        public Boolean IsAdmin { get; set; }
         public ICollection<DomainClass.Class> Classes { get; set; }
     }
 }

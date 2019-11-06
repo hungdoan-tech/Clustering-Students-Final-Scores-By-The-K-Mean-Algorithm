@@ -94,6 +94,7 @@
             this.btn_ExportTXT = new System.Windows.Forms.Button();
             this.btn_DetailList = new System.Windows.Forms.Button();
             this.btn_ExportExcel = new System.Windows.Forms.Button();
+            this.lbl_Department = new System.Windows.Forms.Label();
             this.panel_Navigation.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -668,6 +669,7 @@
             // panel_Function
             // 
             this.panel_Function.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_Function.Controls.Add(this.lbl_Department);
             this.panel_Function.Controls.Add(this.cbb_Deparment);
             this.panel_Function.Controls.Add(this.label_ClusterAmount);
             this.panel_Function.Controls.Add(this.radioButton_KmeanPlusPlus);
@@ -793,6 +795,15 @@
             this.btn_ExportExcel.UseVisualStyleBackColor = false;
             this.btn_ExportExcel.Click += new System.EventHandler(this.btn_ExportExcel_Click);
             // 
+            // lbl_Department
+            // 
+            this.lbl_Department.AutoSize = true;
+            this.lbl_Department.Location = new System.Drawing.Point(181, 71);
+            this.lbl_Department.Name = "lbl_Department";
+            this.lbl_Department.Size = new System.Drawing.Size(101, 13);
+            this.lbl_Department.TabIndex = 28;
+            this.lbl_Department.Text = "Filter by Department";
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -890,6 +901,7 @@
         private System.Windows.Forms.Label lbl_Permision;
         private System.Windows.Forms.Label lbl_UserName;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lbl_Department;
     }
 }
 

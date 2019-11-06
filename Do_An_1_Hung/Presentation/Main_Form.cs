@@ -28,7 +28,7 @@ namespace Do_An_1
             this.ProfessorID = professorID;
         }
 
-        #region Cotrol Tool
+        #region Control Tool
         private void Form1_Load(object sender, EventArgs e)
         {
             //

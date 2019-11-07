@@ -145,17 +145,19 @@ namespace Do_An_1.Business
         {
             using (var ctx = new UniversityContext())
             {
-                foreach( var grade in ctx.Grades)           // kiem tra co gia tri diem nao null khong, neu co se thoat ra khoi thuat toan
-                {
-                    if(grade.Mark==null)
-                    {
-                        return 0;
-                    }
-                }
 
                 List<IGrouping<int, Grade>> pointList = new List<IGrouping<int, Grade>>();
                 if (DepartmentName == "All")
                 {
+
+                    foreach (var grade in ctx.Grades)           // kiem tra co gia tri diem nao null khong, neu co se thoat ra khoi thuat toan
+                    {
+                        if (grade.Mark == null)
+                        {
+                            return 0;
+                        }
+                    }
+
                     pointList = ctx.Grades.GroupBy(s => s.StudentID).ToList();         // danh sach tat ca sinh vien va diem so cua tung sinh vien, 1 Point tuc la 1 student    
                 }
                 else
@@ -166,6 +168,15 @@ namespace Do_An_1.Business
                                         join b in liststudent
                                         on a.StudentID equals b.StudentID
                                         select a;
+
+                    foreach (var grade in tempPointList)           // kiem tra co gia tri diem trong danh sach cac sinh vien thuoc 1 khoa nao do bang null khong, neu co se thoat ra khoi thuat toan
+                    {
+                        if (grade.Mark == null)
+                        {
+                            return 0;
+                        }
+                    }
+
                     pointList = tempPointList.GroupBy(s => s.StudentID).ToList();
                 }
 

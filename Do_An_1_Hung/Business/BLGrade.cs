@@ -72,7 +72,7 @@ namespace Do_An_1.Business
                 return detailGradeInfo.ToList<dynamic>();
             }
         }
-        public bool UpdateMark(int studentID, string classID, double mark)
+        public bool UpdateMark(int studentID, string classID, double? mark)
         {
             using (var ctx = new UniversityContext())
             {

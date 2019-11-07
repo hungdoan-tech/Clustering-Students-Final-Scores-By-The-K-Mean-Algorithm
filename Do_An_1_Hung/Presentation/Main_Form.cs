@@ -34,6 +34,7 @@ namespace Do_An_1
             //
             //Button on Panel main
             //
+
             //btnDashboard
             btnDashboard.TabStop = false;
             btnDashboard.FlatStyle = FlatStyle.Flat;
@@ -75,7 +76,14 @@ namespace Do_An_1
                 {
                     lbl_Permision.Text = "Administrator";
                 }
-            }  
+            }
+
+            picSmall.Hide();
+
+            txb_EditMark.Enabled = false;
+            btn_Save.Enabled = false;
+            btn_Delete.Enabled = false;
+            lbl_Edit.Enabled = false;
 
             chart_AmountStudent.Hide();
             chart_PercentClusters.Hide();
@@ -349,6 +357,13 @@ namespace Do_An_1
             cbb_Classes_GradeForm.Items.Clear();
             var temp = (from s in list select new { s.ClassID }).Distinct();
 
+            foreach(DataGridViewRow row in dgv_Grade.Rows)
+            {
+                if(row.Cells[5].Value == null)
+                {
+                    row.Cells[5].Value = string.Empty;
+                }
+            }
             foreach (var a in temp)
             {
                 cbb_Classes_GradeForm.Items.Add(a.ClassID);
@@ -359,9 +374,21 @@ namespace Do_An_1
             BLGrade grades = new BLGrade();
             var list = grades.DetailGradeInfo_cbb_Classes(cbb_Classes_GradeForm.Text);
             dgv_Grade.DataSource = list.ToList();
+            foreach (DataGridViewRow row in dgv_Grade.Rows)
+            {
+                if (row.Cells[5].Value == null)
+                {
+                    row.Cells[5].Value = string.Empty;
+                }
+            }
         }
         private void dgv_Grade_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            txb_EditMark.Enabled = true;
+            btn_Save.Enabled = true;
+            btn_Delete.Enabled = true;
+            lbl_Edit.Enabled = true;
+
             int rowindex = dgv_Grade.CurrentCell.RowIndex;
             StudentIDUpdate = (int)dgv_Grade.Rows[rowindex].Cells[3].Value;
             ClassIDUpdate = dgv_Grade.Rows[rowindex].Cells[0].Value.ToString();
@@ -377,12 +404,68 @@ namespace Do_An_1
         private void btn_Save_Click(object sender, EventArgs e)
         {
             BLGrade update = new BLGrade();
-            if (update.UpdateMark(StudentIDUpdate, ClassIDUpdate, Convert.ToDouble(txb_EditMark.Text)) == true)
+            bool flag = false;
+
+            if (txb_EditMark.Text == string.Empty)
+            {
+                flag = update.UpdateMark(StudentIDUpdate, ClassIDUpdate, null);
+            }
+            else
+            {
+                flag = update.UpdateMark(StudentIDUpdate, ClassIDUpdate, Convert.ToDouble(txb_EditMark.Text));
+            }
+
+            if ( flag == true)
             {
                 BLGrade grades = new BLGrade();
-                var list = grades.DetailGradeInfo_cbb_Classes(cbb_Classes_GradeForm.Text);
-                dgv_Grade.DataSource = list.ToList();
+                if (cbb_Classes_GradeForm.Text != string.Empty)
+                {
+                    var list = grades.DetailGradeInfo_cbb_Classes(cbb_Classes_GradeForm.Text);
+                    dgv_Grade.DataSource = list.ToList();
+                }
+                else
+                {
+                    var list = grades.DetailGradeInfo_cbb_Subjects(cbb_Subjects_GradeForm.Text);
+                    dgv_Grade.DataSource = list.ToList();
+                }
+                foreach (DataGridViewRow row in dgv_Grade.Rows)
+                {
+                    if (row.Cells[5].Value == null)
+                    {
+                        row.Cells[5].Value = string.Empty;
+                    }
+                }
                 MessageBox.Show(" Updated !");
+            }
+            else
+            {
+                MessageBox.Show(" Something wrong !");
+            }
+        }
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            BLGrade update = new BLGrade();
+            if (update.UpdateMark(StudentIDUpdate, ClassIDUpdate, null) == true)
+            {
+                BLGrade grades = new BLGrade();
+                if (cbb_Classes_GradeForm.Text != string.Empty)
+                {
+                    var list = grades.DetailGradeInfo_cbb_Classes(cbb_Classes_GradeForm.Text);
+                    dgv_Grade.DataSource = list.ToList();
+                }
+                else
+                {
+                    var list = grades.DetailGradeInfo_cbb_Subjects(cbb_Subjects_GradeForm.Text);
+                    dgv_Grade.DataSource = list.ToList();
+                }
+                foreach (DataGridViewRow row in dgv_Grade.Rows)
+                {
+                    if (row.Cells[5].Value == null)
+                    {
+                        row.Cells[5].Value = string.Empty;
+                    }
+                }
+                MessageBox.Show(" Deleted !");
             }
             else
             {
@@ -399,7 +482,7 @@ namespace Do_An_1
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
-                InitialDirectory = @"\",
+                InitialDirectory = @"C:\",
                 Title = "Browse Text Files",
 
                 CheckFileExists = true,
@@ -426,6 +509,24 @@ namespace Do_An_1
                 case 2:
                 {
                         MessageBox.Show("Load all the grades in this file successfully !");
+                        BLGrade grades = new BLGrade();
+                        if (cbb_Classes_GradeForm.Text != string.Empty)
+                        {
+                            var list = grades.DetailGradeInfo_cbb_Classes(cbb_Classes_GradeForm.Text);
+                            dgv_Grade.DataSource = list.ToList();
+                        }
+                        else
+                        {
+                            var list = grades.DetailGradeInfo_cbb_Subjects(cbb_Subjects_GradeForm.Text);
+                            dgv_Grade.DataSource = list.ToList();
+                        }
+                        foreach (DataGridViewRow row in dgv_Grade.Rows)
+                        {
+                            if (row.Cells[5].Value == null)
+                            {
+                                row.Cells[5].Value = string.Empty;
+                            }
+                        }
                         break;
                 }
                 case 1:

@@ -127,9 +127,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home_120px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\student_male_50px.png" />
   </ItemGroup>
   <ItemGroup>
@@ -157,9 +154,6 @@
     <None Include="Resources\report_card1_40px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home_50px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\left_round_50px.png" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +164,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_text_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_exit_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bullish_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bullish_50px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -93,9 +93,9 @@ namespace Do_An_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home_120px {
+        internal static System.Drawing.Bitmap icons8_bullish_120px {
             get {
-                object obj = ResourceManager.GetObject("home_120px", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_bullish_120px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,19 @@ namespace Do_An_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home_50px {
+        internal static System.Drawing.Bitmap icons8_bullish_50px {
             get {
-                object obj = ResourceManager.GetObject("home_50px", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_bullish_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_exit_40px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_exit_40px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

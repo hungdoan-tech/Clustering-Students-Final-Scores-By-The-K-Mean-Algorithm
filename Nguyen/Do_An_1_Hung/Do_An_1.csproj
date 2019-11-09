@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55A33BDE-74CE-4853-825C-BF411F3E2D88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Do_An_1</RootNamespace>
+    <AssemblyName>Do_An_1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\BLAnalysis.cs" />
+    <Compile Include="Business\BLGrade.cs" />
+    <Compile Include="Business\BLStudent.cs" />
+    <Compile Include="Presentation\Detail_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Detail_Form.Designer.cs">
+      <DependentUpon>Detail_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Class.cs" />
+    <Compile Include="Model\Department.cs" />
+    <Compile Include="Model\Grade.cs" />
+    <Compile Include="Other\MyGrouping.cs" />
+    <Compile Include="Model\Professor.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Model\Subject.cs" />
+    <Compile Include="Presentation\Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ProgcessReport.cs" />
+    <Compile Include="Presentation\ProgressBarModern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ProgressBarModern.Designer.cs">
+      <DependentUpon>ProgressBarModern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Other\UniversityContext.cs" />
+    <Compile Include="Other\UniversityDBInitializer.cs" />
+    <EmbeddedResource Include="Presentation\Detail_Form.resx">
+      <DependentUpon>Detail_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ProgressBarModern.resx">
+      <DependentUpon>ProgressBarModern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_male_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squared_menu_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_file_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_card_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_card1_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_round_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_gender_neutral_user_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_text_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_exit_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bullish_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bullish_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture_.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_login_man-256-x67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_logout_man_profile_account_x67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_male_circle_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\young-students-cartoon-x268.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_student.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-hardworking-student-backgrounds-for-powerpoint-education-ppt-with-powerpoint-background-for-student.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\95569393-scattered-stationery-on-student-s-desk-yellow-background-top-view-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_210151942-stock-photo-school-accessories-white-background-back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30-grading.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_Shool.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back-to-school.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconProgram.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconProgram_150px.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bullish_70px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kmean_153px.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graph_Main_160px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+</Project>

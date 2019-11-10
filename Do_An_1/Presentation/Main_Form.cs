@@ -87,12 +87,22 @@ namespace Do_An_1
             TabControl_Main.TabPages.Remove(tabPage_Grade);
             TabControl_Main.TabPages.Remove(tabPage_Analysis);
 
-            if (LoginStatus == 1)
-            {
-                btnAnalysis.Enabled = false;
-            }
 
             LoadComboBox();
+
+            if (LoginStatus == 1)
+            {
+                cbb_Deparment.Enabled = false;
+                btn_DetailList.Enabled = false;
+                btn_ExportExcel.Enabled = false;
+                btn_ExportTXT.Enabled = false;
+            }
+            else
+            {
+                lbl_SubjectOption.Enabled = false;
+                cbb_Subject.Enabled = false;
+            }
+
 
             using (var ctx = new UniversityContext())
             {
@@ -133,12 +143,18 @@ namespace Do_An_1
                                     where c.ProfessorID.ToString() == this.ProfessorID.ToString()
                                     select new
                                     {
-                                        c.SubjectID
+                                        c.SubjectID,
+                                        s.SubjectName
                                     }).Distinct();
                     foreach (var a in subjects)
                     {
                         cbb_Subjects_GradeForm.Items.Add(a.SubjectID);
                         cbb_Subjects_StudentForm.Items.Add(a.SubjectID);
+                        cbb_Subject.Items.Add(a.SubjectName);
+                        if(cbb_Subject.Items.Count==1)
+                        {
+                            cbb_Subject.Text = cbb_Subject.Items[0].ToString();
+                        }
                     }
 
                     //Đưa dữ liệu lớp vào Combobox
@@ -153,7 +169,7 @@ namespace Do_An_1
                     {
                         cbb_Classes_GradeForm.Items.Add(a.ClassID);
                         cbb_Classes_StudentForm.Items.Add(a.ClassID);
-                    }
+                    }                 
                 }
                 else
                 {
@@ -374,6 +390,7 @@ namespace Do_An_1
         }
         private void btn_Browse_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Noting that how the data in the TXT file should be organized as: \n StudentID     ClassID     Mark \n ");
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
                 InitialDirectory = @"C:\",
@@ -530,7 +547,7 @@ namespace Do_An_1
         {
 
             this.Ana = new BLAnalysis((int)numericUpDown_ClusterAmount.Value);
-            if (Ana.Kmean(radioButton_KmeanPlusPlus.Checked,cbb_Deparment.Text) == 0)
+            if (Ana.Kmean(radioButton_KmeanPlusPlus.Checked,cbb_Deparment.Text,cbb_Subject.Text,ProfessorID) == 0)
             {
                 MessageBox.Show("Your data contains null value in some grade ! Please Check !");
                 return;
@@ -558,8 +575,22 @@ namespace Do_An_1
                 }
                 else
                 {
-                    var departmentid = ctx.Departments.FirstOrDefault(d => d.DeparmentName == cbb_Deparment.Text).DepartmentID;
-                    studentAmount = ctx.Students.Where(s => s.DepartmentID == departmentid).Count();
+                    if (cbb_Deparment.Text != string.Empty)
+                    {
+                        var departmentid = ctx.Departments.FirstOrDefault(d => d.DeparmentName == cbb_Deparment.Text).DepartmentID;
+                        studentAmount = ctx.Students.Where(s => s.DepartmentID == departmentid).Count();
+                    }
+                    else
+                    {
+                       var subject = ctx.Subjects.SingleOrDefault(s => s.SubjectName == cbb_Subject.Text);
+                       var classes = ctx.Classes.Where(s => s.SubjectID == subject.SubjectID && s.ProfessorID == ProfessorID);
+                       var points = from grade in ctx.Grades
+                                    join eachclass in classes
+                                    on grade.ClassID equals eachclass.ClassID
+                                    select grade;
+                       var pointList = points.GroupBy(s => s.StudentID).ToList();
+                       studentAmount = pointList.Count;                     
+                    }
                 }
                 int count = 0;
                 foreach (var cluster in Ana.Clusters)
@@ -621,7 +652,6 @@ namespace Do_An_1
 
                     DataGridViewRow tempRow = new DataGridViewRow();
                     Temp.Rows.Add(tempRow);
-
                     foreach (var point in Ana.Clusters[i])
                     {
                         DataGridViewRow row = (DataGridViewRow)Temp.Rows[0].Clone();
@@ -633,7 +663,7 @@ namespace Do_An_1
                         }
                         Temp.Rows.Add(row);
                     }
-                    Temp.Rows.RemoveAt(0);
+                    Temp.Rows.RemoveAt(0);                   
                 }
             }
             return ListClusterDataGridView;

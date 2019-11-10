@@ -82,7 +82,7 @@ namespace Do_An_1.Business
                         var temp = 0;
                         Result.Add(temp);
                     }
-                    for (int i = 0; i < this.SubjectAmount; i++)        // An gian, cong thuc tinh khoang cach, nhung khong tinh cang bac 2
+                    for (int i = 0; i < this.SubjectAmount; i++)        // Cong thuc tinh khoang cach, nhung khong tinh cang bac 2
                     {
                         for (int j = 0; j < Count; j++)
                         {
@@ -141,7 +141,7 @@ namespace Do_An_1.Business
             return;
         }
 
-        public int Kmean(bool IsKmeanPlusPlus,string DepartmentName)
+        public int Kmean(bool IsKmeanPlusPlus,string DepartmentName,string SubjectName, int ProfessorID)
         {
             using (var ctx = new UniversityContext())
             {
@@ -157,27 +157,40 @@ namespace Do_An_1.Business
                             return 0;
                         }
                     }
-
-                    pointList = ctx.Grades.GroupBy(s => s.StudentID).ToList();         // danh sach tat ca sinh vien va diem so cua tung sinh vien, 1 Point tuc la 1 student    
+                        pointList = ctx.Grades.GroupBy(s => s.StudentID).ToList();    // danh sach tat ca sinh vien va diem so cua tung sinh vien, 1 Point tuc la 1 student    
                 }
                 else
                 {
-                    var departmentid = ctx.Departments.FirstOrDefault(s => s.DeparmentName == DepartmentName).DepartmentID;
-                    var liststudent = ctx.Students.Where(s => s.DepartmentID == departmentid);
-                    var tempPointList = from a in ctx.Grades
-                                        join b in liststudent
-                                        on a.StudentID equals b.StudentID
-                                        select a;
-
-                    foreach (var grade in tempPointList)           // kiem tra co gia tri diem trong danh sach cac sinh vien thuoc 1 khoa nao do bang null khong, neu co se thoat ra khoi thuat toan
-                    {
-                        if (grade.Mark == null)
-                        {
-                            return 0;
-                        }
+                    if (DepartmentName == string.Empty)
+                    {                        
+                            var subject = ctx.Subjects.SingleOrDefault(s => s.SubjectName == SubjectName);
+                            var classes = ctx.Classes.Where(s => s.SubjectID == subject.SubjectID && s.ProfessorID == ProfessorID);
+                            var points = from grade in ctx.Grades
+                                     join eachclass in classes
+                                     on grade.ClassID equals eachclass.ClassID
+                                     select grade;
+                            pointList = points.GroupBy(s => s.StudentID).ToList();
+                            this.SubjectAmount = 1;
                     }
+                    else
+                    {
+                        var departmentid = ctx.Departments.FirstOrDefault(s => s.DeparmentName == DepartmentName).DepartmentID;
+                        var liststudent = ctx.Students.Where(s => s.DepartmentID == departmentid);
+                        var tempPointList = from a in ctx.Grades
+                                            join b in liststudent
+                                            on a.StudentID equals b.StudentID
+                                            select a;
 
-                    pointList = tempPointList.GroupBy(s => s.StudentID).ToList();
+                        foreach (var grade in tempPointList)           // kiem tra co gia tri diem trong danh sach cac sinh vien thuoc 1 khoa nao do bang null khong, neu co se thoat ra khoi thuat toan
+                        {
+                            if (grade.Mark == null)
+                            {
+                                return 0;
+                            }
+                        }
+
+                        pointList = tempPointList.GroupBy(s => s.StudentID).ToList();
+                    }
                 }
 
                 Clusters = new List<List<IGrouping<int, Grade>>>();  // Khai bai List chua cac cluster 
@@ -261,16 +274,16 @@ namespace Do_An_1.Business
                         }
 
                         double? minResult = Result[0];      // Tim ra khoang cach nho nhat cua phan tu voi cac central point, va gan phan tu thuoc cluster tuong ung
-                        int GroupMax = 0;
+                        int GroupMin = 0;
                         for (int i = 0; i < Result.Count; i++)
                         {
                             if (Result[i] < minResult)
                             {
                                 minResult = Result[i];
-                                GroupMax = i;
+                                GroupMin = i;
                             }
                         }
-                        Clusters[GroupMax].Add(point);
+                        Clusters[GroupMin].Add(point);
                     }
 
                     List<double?> elementList = new List<double?>();

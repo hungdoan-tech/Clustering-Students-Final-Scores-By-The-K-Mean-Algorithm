@@ -12933,6 +12933,7 @@ namespace Do_An_1
                   new Grade{ StudentID=17110599,ClassID="CLA339"},
             };
             context.Grades.AddRange(TempGrade);
+
             base.Seed(context);
         }
     }

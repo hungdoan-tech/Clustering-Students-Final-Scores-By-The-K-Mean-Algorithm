@@ -102,9 +102,16 @@ namespace Do_An_1
                 {
                     //txb_DepartmentName.Text = ctx.Departments.FirstOrDefault(s => s.DepartmentID == professor.DepartmentID).ToString();                 
                     txb_PhoneNumber.Text = professor.PhoneNumber.ToString();
-                    txb_BirthDate.Text = professor.BirthDate.ToString();
+                    string[] element = new string[3];
+                    element = professor.BirthDate.ToString().Split(new char[] { ' ' });
+                    txb_BirthDate.Text = element[0];
                 }
             }
+
+
+            txb_ProfessorName.TextAlign = HorizontalAlignment.Center;
+            txb_PhoneNumber.TextAlign = HorizontalAlignment.Center;
+            txb_BirthDate.TextAlign = HorizontalAlignment.Center;
             txb_ProfessorName.Enabled = false;
             txb_PhoneNumber.Enabled = false;
             txb_BirthDate.Enabled = false;
@@ -652,7 +659,7 @@ namespace Do_An_1
                 {
                     worksheet = (Microsoft.Office.Interop.Excel._Worksheet)workbook.Worksheets[l + 1];
                     worksheet = workbook.ActiveSheet;
-                    worksheet.Name = "Cluster " + (l + 1).ToString();
+                    worksheet.Name = "Cluster " + (l).ToString();
                     try
                     {
                         for (int i = 0; i < ListClusterDataGridView[l].Columns.Count; i++)

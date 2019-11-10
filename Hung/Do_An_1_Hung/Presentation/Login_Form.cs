@@ -34,6 +34,7 @@ namespace Do_An_1
                 }
             }
 
+            label_Processing.Visible = false;
             rbtn_Admin.Checked = true;
             txb_Account.Text = "1120";
             txb_Password.Text = "10000020";
@@ -113,6 +114,7 @@ namespace Do_An_1
         }
         public void btn_Login_Click(object sender, EventArgs e)
         {
+            label_Processing.Visible = true;
             timerAuthentication.Enabled = true;
             timerAuthentication.Start();
             progressBar_Proccesing.Visible = true;
@@ -142,14 +144,14 @@ namespace Do_An_1
         {
             if (StatusPass % 2 == 0)
             {
-                rdBShowPass.Checked = false;
+                rdb_ShowPass.Checked = false;
             }
             else
             {
-                rdBShowPass.Checked = true;
+                rdb_ShowPass.Checked = true;
             }
 
-            if (rdBShowPass.Checked)
+            if (rdb_ShowPass.Checked)
             {
                 txb_Password.UseSystemPasswordChar = PasswordPropertyTextAttribute.Yes.Password;
             }

@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel_Navigation = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbl_Permision = new System.Windows.Forms.Label();
@@ -149,7 +149,7 @@
             this.panel_Navigation.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Navigation.Location = new System.Drawing.Point(0, 0);
             this.panel_Navigation.Name = "panel_Navigation";
-            this.panel_Navigation.Size = new System.Drawing.Size(230, 819);
+            this.panel_Navigation.Size = new System.Drawing.Size(230, 858);
             this.panel_Navigation.TabIndex = 0;
             this.panel_Navigation.Click += new System.EventHandler(this.panelMain_Click);
             // 
@@ -187,7 +187,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Do_An_1.Properties.Resources.icons8_exit_40px;
+            this.pictureBox2.Image = global::Do_An_1.Properties.Resources.icons8_gender_neutral_user_40px;
             this.pictureBox2.Location = new System.Drawing.Point(0, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(39, 38);
@@ -294,7 +294,7 @@
             this.TabControl_Main.Location = new System.Drawing.Point(230, 3);
             this.TabControl_Main.Name = "TabControl_Main";
             this.TabControl_Main.SelectedIndex = 0;
-            this.TabControl_Main.Size = new System.Drawing.Size(1495, 894);
+            this.TabControl_Main.Size = new System.Drawing.Size(1495, 930);
             this.TabControl_Main.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabControl_Main.TabIndex = 2;
             // 
@@ -304,7 +304,7 @@
             this.tabPage_Student.Location = new System.Drawing.Point(4, 4);
             this.tabPage_Student.Name = "tabPage_Student";
             this.tabPage_Student.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Student.Size = new System.Drawing.Size(1487, 868);
+            this.tabPage_Student.Size = new System.Drawing.Size(1487, 904);
             this.tabPage_Student.TabIndex = 0;
             this.tabPage_Student.Text = "Student";
             this.tabPage_Student.UseVisualStyleBackColor = true;
@@ -411,7 +411,7 @@
             this.tabPage_Grade.Location = new System.Drawing.Point(4, 4);
             this.tabPage_Grade.Name = "tabPage_Grade";
             this.tabPage_Grade.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Grade.Size = new System.Drawing.Size(1487, 868);
+            this.tabPage_Grade.Size = new System.Drawing.Size(1487, 904);
             this.tabPage_Grade.TabIndex = 1;
             this.tabPage_Grade.Text = "Grade";
             this.tabPage_Grade.UseVisualStyleBackColor = true;
@@ -566,7 +566,7 @@
             this.txb_Path.Location = new System.Drawing.Point(28, 389);
             this.txb_Path.Multiline = true;
             this.txb_Path.Name = "txb_Path";
-            this.txb_Path.Size = new System.Drawing.Size(262, 27);
+            this.txb_Path.Size = new System.Drawing.Size(258, 27);
             this.txb_Path.TabIndex = 19;
             // 
             // cbb_Classes_GradeForm
@@ -575,7 +575,7 @@
             this.cbb_Classes_GradeForm.FormattingEnabled = true;
             this.cbb_Classes_GradeForm.Location = new System.Drawing.Point(24, 122);
             this.cbb_Classes_GradeForm.Name = "cbb_Classes_GradeForm";
-            this.cbb_Classes_GradeForm.Size = new System.Drawing.Size(245, 32);
+            this.cbb_Classes_GradeForm.Size = new System.Drawing.Size(262, 32);
             this.cbb_Classes_GradeForm.TabIndex = 23;
             this.cbb_Classes_GradeForm.SelectedIndexChanged += new System.EventHandler(this.cbb_Classes_GradeForm_SelectedIndexChanged);
             // 
@@ -595,7 +595,7 @@
             this.cbb_Subjects_GradeForm.FormattingEnabled = true;
             this.cbb_Subjects_GradeForm.Location = new System.Drawing.Point(24, 45);
             this.cbb_Subjects_GradeForm.Name = "cbb_Subjects_GradeForm";
-            this.cbb_Subjects_GradeForm.Size = new System.Drawing.Size(245, 32);
+            this.cbb_Subjects_GradeForm.Size = new System.Drawing.Size(262, 32);
             this.cbb_Subjects_GradeForm.TabIndex = 26;
             this.cbb_Subjects_GradeForm.SelectedIndexChanged += new System.EventHandler(this.cbb_Subjects_GradeForm_SelectedIndexChanged);
             // 
@@ -633,7 +633,7 @@
             this.tabPage_Analysis.Location = new System.Drawing.Point(4, 4);
             this.tabPage_Analysis.Name = "tabPage_Analysis";
             this.tabPage_Analysis.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Analysis.Size = new System.Drawing.Size(1487, 868);
+            this.tabPage_Analysis.Size = new System.Drawing.Size(1487, 904);
             this.tabPage_Analysis.TabIndex = 2;
             this.tabPage_Analysis.Text = "Analysis";
             // 
@@ -651,68 +651,68 @@
             // 
             // chart_AverageGrade
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart_AverageGrade.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart_AverageGrade.Legends.Add(legend4);
+            chartArea16.Name = "ChartArea1";
+            this.chart_AverageGrade.ChartAreas.Add(chartArea16);
+            legend16.Name = "Legend1";
+            this.chart_AverageGrade.Legends.Add(legend16);
             this.chart_AverageGrade.Location = new System.Drawing.Point(999, 86);
             this.chart_AverageGrade.Name = "chart_AverageGrade";
             this.chart_AverageGrade.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Average Grade";
-            series4.YValuesPerPoint = 2;
-            this.chart_AverageGrade.Series.Add(series4);
+            series16.ChartArea = "ChartArea1";
+            series16.Legend = "Legend1";
+            series16.Name = "Average Grade";
+            series16.YValuesPerPoint = 2;
+            this.chart_AverageGrade.Series.Add(series16);
             this.chart_AverageGrade.Size = new System.Drawing.Size(450, 343);
             this.chart_AverageGrade.TabIndex = 7;
             this.chart_AverageGrade.Text = "chart1";
             // 
             // chart_AmountStudent
             // 
-            chartArea5.BorderColor = System.Drawing.Color.Transparent;
-            chartArea5.BorderWidth = 0;
-            chartArea5.Name = "ChartArea1";
-            this.chart_AmountStudent.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart_AmountStudent.Legends.Add(legend5);
+            chartArea17.BorderColor = System.Drawing.Color.Transparent;
+            chartArea17.BorderWidth = 0;
+            chartArea17.Name = "ChartArea1";
+            this.chart_AmountStudent.ChartAreas.Add(chartArea17);
+            legend17.Name = "Legend1";
+            this.chart_AmountStudent.Legends.Add(legend17);
             this.chart_AmountStudent.Location = new System.Drawing.Point(22, 86);
             this.chart_AmountStudent.Name = "chart_AmountStudent";
             this.chart_AmountStudent.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             this.chart_AmountStudent.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Student";
-            series5.YValuesPerPoint = 4;
-            this.chart_AmountStudent.Series.Add(series5);
+            series17.ChartArea = "ChartArea1";
+            series17.Legend = "Legend1";
+            series17.Name = "Student";
+            series17.YValuesPerPoint = 4;
+            this.chart_AmountStudent.Series.Add(series17);
             this.chart_AmountStudent.Size = new System.Drawing.Size(472, 343);
             this.chart_AmountStudent.TabIndex = 6;
-            title3.Name = "Amount Student Each Cluster ";
-            title3.Text = "Amount Student Each Cluster ";
-            this.chart_AmountStudent.Titles.Add(title3);
+            title11.Name = "Amount Student Each Cluster ";
+            title11.Text = "Amount Student Each Cluster ";
+            this.chart_AmountStudent.Titles.Add(title11);
             // 
             // chart_PercentClusters
             // 
-            chartArea6.Area3DStyle.Enable3D = true;
-            chartArea6.Area3DStyle.Inclination = 60;
-            chartArea6.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
-            chartArea6.Name = "ChartArea1";
-            this.chart_PercentClusters.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart_PercentClusters.Legends.Add(legend6);
+            chartArea18.Area3DStyle.Enable3D = true;
+            chartArea18.Area3DStyle.Inclination = 60;
+            chartArea18.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
+            chartArea18.Name = "ChartArea1";
+            this.chart_PercentClusters.ChartAreas.Add(chartArea18);
+            legend18.Name = "Legend1";
+            this.chart_PercentClusters.Legends.Add(legend18);
             this.chart_PercentClusters.Location = new System.Drawing.Point(550, 86);
             this.chart_PercentClusters.Name = "chart_PercentClusters";
             this.chart_PercentClusters.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series6.Legend = "Legend1";
-            series6.Name = "Student";
-            this.chart_PercentClusters.Series.Add(series6);
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series18.Legend = "Legend1";
+            series18.Name = "Student";
+            this.chart_PercentClusters.Series.Add(series18);
             this.chart_PercentClusters.Size = new System.Drawing.Size(392, 343);
             this.chart_PercentClusters.TabIndex = 5;
             this.chart_PercentClusters.Text = "chart1";
-            title4.Name = "Title1";
-            title4.Text = "Percent Of All Cluster ";
-            this.chart_PercentClusters.Titles.Add(title4);
+            title12.Name = "Title1";
+            title12.Text = "Percent Of All Cluster ";
+            this.chart_PercentClusters.Titles.Add(title12);
             // 
             // panel_Function
             // 
@@ -736,13 +736,13 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("MS Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(863, 46);
+            this.label6.Location = new System.Drawing.Point(889, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(600, 44);
+            this.label6.Size = new System.Drawing.Size(559, 33);
             this.label6.TabIndex = 32;
-            this.label6.Text = "Clustering Student By Their Grade";
+            this.label6.Text = "Clustering Student By Their Grades";
             // 
             // textBox4
             // 
@@ -825,7 +825,7 @@
             0});
             this.numericUpDown_ClusterAmount.Name = "numericUpDown_ClusterAmount";
             this.numericUpDown_ClusterAmount.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.numericUpDown_ClusterAmount.Size = new System.Drawing.Size(111, 33);
+            this.numericUpDown_ClusterAmount.Size = new System.Drawing.Size(98, 33);
             this.numericUpDown_ClusterAmount.TabIndex = 16;
             this.numericUpDown_ClusterAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown_ClusterAmount.Value = new decimal(new int[] {
@@ -899,7 +899,7 @@
             this.tabPage_Dashboard.Controls.Add(this.panel4);
             this.tabPage_Dashboard.Location = new System.Drawing.Point(4, 4);
             this.tabPage_Dashboard.Name = "tabPage_Dashboard";
-            this.tabPage_Dashboard.Size = new System.Drawing.Size(1487, 868);
+            this.tabPage_Dashboard.Size = new System.Drawing.Size(1487, 904);
             this.tabPage_Dashboard.TabIndex = 3;
             this.tabPage_Dashboard.Text = "Dashboard";
             // 
@@ -940,7 +940,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(409, 34);
+            this.label10.Location = new System.Drawing.Point(420, 34);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(101, 25);
             this.label10.TabIndex = 14;
@@ -949,26 +949,26 @@
             // txb_BirthDate
             // 
             this.txb_BirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_BirthDate.Location = new System.Drawing.Point(339, 73);
+            this.txb_BirthDate.Location = new System.Drawing.Point(349, 73);
             this.txb_BirthDate.Multiline = true;
             this.txb_BirthDate.Name = "txb_BirthDate";
-            this.txb_BirthDate.Size = new System.Drawing.Size(260, 43);
+            this.txb_BirthDate.Size = new System.Drawing.Size(239, 43);
             this.txb_BirthDate.TabIndex = 12;
             // 
             // txb_PhoneNumber
             // 
             this.txb_PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_PhoneNumber.Location = new System.Drawing.Point(647, 73);
+            this.txb_PhoneNumber.Location = new System.Drawing.Point(663, 73);
             this.txb_PhoneNumber.Multiline = true;
             this.txb_PhoneNumber.Name = "txb_PhoneNumber";
-            this.txb_PhoneNumber.Size = new System.Drawing.Size(260, 43);
+            this.txb_PhoneNumber.Size = new System.Drawing.Size(234, 43);
             this.txb_PhoneNumber.TabIndex = 11;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(690, 34);
+            this.label9.Location = new System.Drawing.Point(698, 34);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(155, 25);
             this.label9.TabIndex = 10;
@@ -977,10 +977,10 @@
             // txb_ProfessorName
             // 
             this.txb_ProfessorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_ProfessorName.Location = new System.Drawing.Point(56, 73);
+            this.txb_ProfessorName.Location = new System.Drawing.Point(45, 73);
             this.txb_ProfessorName.Multiline = true;
             this.txb_ProfessorName.Name = "txb_ProfessorName";
-            this.txb_ProfessorName.Size = new System.Drawing.Size(222, 43);
+            this.txb_ProfessorName.Size = new System.Drawing.Size(235, 43);
             this.txb_ProfessorName.TabIndex = 9;
             // 
             // label8
@@ -998,7 +998,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1725, 819);
+            this.ClientSize = new System.Drawing.Size(1725, 858);
             this.Controls.Add(this.TabControl_Main);
             this.Controls.Add(this.panel_Navigation);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;

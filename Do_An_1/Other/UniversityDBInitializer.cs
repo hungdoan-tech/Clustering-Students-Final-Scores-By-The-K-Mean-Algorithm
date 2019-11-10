@@ -5,7 +5,7 @@ using System.Data.Entity;
 
 namespace Do_An_1
 {
-    public class UniversityDBInitializer : DropCreateDatabaseAlways<UniversityContext> //DropCreateDatabaseIfModelChanges<UniversityContext>
+    public class UniversityDBInitializer : DropCreateDatabaseIfModelChanges<UniversityContext> //DropCreateDatabaseIfModelChanges<UniversityContext>
     {
         protected override void Seed(UniversityContext context)
         {

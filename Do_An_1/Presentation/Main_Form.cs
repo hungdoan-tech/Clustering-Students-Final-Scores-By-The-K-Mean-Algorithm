@@ -79,9 +79,6 @@ namespace Do_An_1
             chart_PercentClusters.Hide();
             chart_AverageGrade.Hide();
 
-            btn_DetailList.Enabled = false;
-            btn_ExportExcel.Enabled = false;
-            btn_ExportTXT.Enabled = false;
 
             TabControl_Main.TabPages.Remove(tabPage_Student);
             TabControl_Main.TabPages.Remove(tabPage_Grade);
@@ -92,10 +89,7 @@ namespace Do_An_1
 
             if (LoginStatus == 1)
             {
-                cbb_Deparment.Enabled = false;
-                btn_DetailList.Enabled = false;
-                btn_ExportExcel.Enabled = false;
-                btn_ExportTXT.Enabled = false;
+                cbb_Deparment.Enabled = false;      
             }
             else
             {
@@ -553,10 +547,6 @@ namespace Do_An_1
                 return;
             }
 
-            btn_DetailList.Enabled = true;
-            btn_ExportExcel.Enabled = true;
-            btn_ExportTXT.Enabled = true;
-
             chart_AmountStudent.Show();
             chart_PercentClusters.Show();
             chart_AverageGrade.Show();
@@ -630,10 +620,20 @@ namespace Do_An_1
                     temporaryColumnStudentName.HeaderText = "Student Name";
                     Temp.Columns.Add(temporaryColumnStudentName);
 
-                    foreach (var subject in ctx.Subjects)
+
+                    if (LoginStatus == 2)
+                    {
+                        foreach (var subject in ctx.Subjects)
+                        {
+                            DataGridViewTextBoxColumn temporaryColumn = new DataGridViewTextBoxColumn();
+                            temporaryColumn.HeaderText = subject.SubjectName;
+                            Temp.Columns.Add(temporaryColumn);
+                        }
+                    }
+                    else
                     {
                         DataGridViewTextBoxColumn temporaryColumn = new DataGridViewTextBoxColumn();
-                        temporaryColumn.HeaderText = subject.SubjectName;
+                        temporaryColumn.HeaderText = cbb_Subject.Text;
                         Temp.Columns.Add(temporaryColumn);
                     }
 
@@ -652,18 +652,34 @@ namespace Do_An_1
 
                     DataGridViewRow tempRow = new DataGridViewRow();
                     Temp.Rows.Add(tempRow);
-                    foreach (var point in Ana.Clusters[i])
+
+                    if (LoginStatus == 2)
                     {
-                        DataGridViewRow row = (DataGridViewRow)Temp.Rows[0].Clone();
-                        row.Cells[0].Value = point.Key;
-                        row.Cells[1].Value = ctx.Students.FirstOrDefault(s => s.StudentID == point.Key).StudentName;
-                        for (int j = 0; j < point.Count(); j++)
+                        foreach (var point in Ana.Clusters[i])
                         {
-                            row.Cells[j + 2].Value = point.ElementAt(j).Mark;
+                            DataGridViewRow row = (DataGridViewRow)Temp.Rows[0].Clone();
+                            row.Cells[0].Value = point.Key;
+                            row.Cells[1].Value = ctx.Students.FirstOrDefault(s => s.StudentID == point.Key).StudentName;
+                            for (int j = 0; j < point.Count(); j++)
+                            {
+                                row.Cells[j + 2].Value = point.ElementAt(j).Mark;
+                            }
+                            Temp.Rows.Add(row);
                         }
-                        Temp.Rows.Add(row);
+                        Temp.Rows.RemoveAt(0);
                     }
-                    Temp.Rows.RemoveAt(0);                   
+                    else
+                    {
+                        foreach (var point in Ana.Clusters[i])
+                        {
+                            DataGridViewRow row = (DataGridViewRow)Temp.Rows[0].Clone();
+                            row.Cells[0].Value = point.Key;
+                            row.Cells[1].Value = ctx.Students.FirstOrDefault(s => s.StudentID == point.Key).StudentName;                       
+                            row.Cells[2].Value = point.ElementAt(0).Mark;
+                            Temp.Rows.Add(row);
+                        }
+                        Temp.Rows.RemoveAt(0);
+                    }
                 }
             }
             return ListClusterDataGridView;

@@ -33,7 +33,6 @@ C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\bin\Debug\EntityFramework.xml
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\obj\Debug\Do_An_1.csprojAssemblyReference.cache
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\obj\Debug\Do_An_1.Properties.Resources.resources
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\obj\Debug\Do_An_1.csproj.GenerateResource.cache
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\obj\Debug\Do_An_1.csproj.CopyComplete

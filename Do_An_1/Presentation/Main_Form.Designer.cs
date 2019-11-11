@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel_Navigation = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbl_Permision = new System.Windows.Forms.Label();
@@ -87,6 +87,8 @@
             this.chart_AmountStudent = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_PercentClusters = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel_Function = new System.Windows.Forms.Panel();
+            this.lbl_SubjectOption = new System.Windows.Forms.Label();
+            this.cbb_Subject = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -110,8 +112,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txb_ProfessorName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.cbb_Subject = new System.Windows.Forms.ComboBox();
-            this.lbl_SubjectOption = new System.Windows.Forms.Label();
             this.panel_Navigation.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -151,7 +151,7 @@
             this.panel_Navigation.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Navigation.Location = new System.Drawing.Point(0, 0);
             this.panel_Navigation.Name = "panel_Navigation";
-            this.panel_Navigation.Size = new System.Drawing.Size(230, 861);
+            this.panel_Navigation.Size = new System.Drawing.Size(230, 860);
             this.panel_Navigation.TabIndex = 0;
             this.panel_Navigation.Click += new System.EventHandler(this.panelMain_Click);
             // 
@@ -653,68 +653,68 @@
             // 
             // chart_AverageGrade
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chart_AverageGrade.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chart_AverageGrade.Legends.Add(legend10);
+            chartArea4.Name = "ChartArea1";
+            this.chart_AverageGrade.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart_AverageGrade.Legends.Add(legend4);
             this.chart_AverageGrade.Location = new System.Drawing.Point(999, 86);
             this.chart_AverageGrade.Name = "chart_AverageGrade";
             this.chart_AverageGrade.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Average Grade";
-            series10.YValuesPerPoint = 2;
-            this.chart_AverageGrade.Series.Add(series10);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Average Grade";
+            series4.YValuesPerPoint = 2;
+            this.chart_AverageGrade.Series.Add(series4);
             this.chart_AverageGrade.Size = new System.Drawing.Size(450, 343);
             this.chart_AverageGrade.TabIndex = 7;
             this.chart_AverageGrade.Text = "chart1";
             // 
             // chart_AmountStudent
             // 
-            chartArea11.BorderColor = System.Drawing.Color.Transparent;
-            chartArea11.BorderWidth = 0;
-            chartArea11.Name = "ChartArea1";
-            this.chart_AmountStudent.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chart_AmountStudent.Legends.Add(legend11);
+            chartArea5.BorderColor = System.Drawing.Color.Transparent;
+            chartArea5.BorderWidth = 0;
+            chartArea5.Name = "ChartArea1";
+            this.chart_AmountStudent.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart_AmountStudent.Legends.Add(legend5);
             this.chart_AmountStudent.Location = new System.Drawing.Point(22, 86);
             this.chart_AmountStudent.Name = "chart_AmountStudent";
             this.chart_AmountStudent.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             this.chart_AmountStudent.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Student";
-            series11.YValuesPerPoint = 4;
-            this.chart_AmountStudent.Series.Add(series11);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Student";
+            series5.YValuesPerPoint = 4;
+            this.chart_AmountStudent.Series.Add(series5);
             this.chart_AmountStudent.Size = new System.Drawing.Size(472, 343);
             this.chart_AmountStudent.TabIndex = 6;
-            title7.Name = "Amount Student Each Cluster ";
-            title7.Text = "Amount Student Each Cluster ";
-            this.chart_AmountStudent.Titles.Add(title7);
+            title3.Name = "Amount Student Each Cluster ";
+            title3.Text = "Amount Student Each Cluster ";
+            this.chart_AmountStudent.Titles.Add(title3);
             // 
             // chart_PercentClusters
             // 
-            chartArea12.Area3DStyle.Enable3D = true;
-            chartArea12.Area3DStyle.Inclination = 60;
-            chartArea12.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
-            chartArea12.Name = "ChartArea1";
-            this.chart_PercentClusters.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chart_PercentClusters.Legends.Add(legend12);
+            chartArea6.Area3DStyle.Enable3D = true;
+            chartArea6.Area3DStyle.Inclination = 60;
+            chartArea6.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
+            chartArea6.Name = "ChartArea1";
+            this.chart_PercentClusters.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart_PercentClusters.Legends.Add(legend6);
             this.chart_PercentClusters.Location = new System.Drawing.Point(550, 86);
             this.chart_PercentClusters.Name = "chart_PercentClusters";
             this.chart_PercentClusters.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series12.Legend = "Legend1";
-            series12.Name = "Student";
-            this.chart_PercentClusters.Series.Add(series12);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series6.Legend = "Legend1";
+            series6.Name = "Student";
+            this.chart_PercentClusters.Series.Add(series6);
             this.chart_PercentClusters.Size = new System.Drawing.Size(392, 343);
             this.chart_PercentClusters.TabIndex = 5;
             this.chart_PercentClusters.Text = "chart1";
-            title8.Name = "Title1";
-            title8.Text = "Percent Of All Cluster ";
-            this.chart_PercentClusters.Titles.Add(title8);
+            title4.Name = "Title1";
+            title4.Text = "Percent Of All Cluster ";
+            this.chart_PercentClusters.Titles.Add(title4);
             // 
             // panel_Function
             // 
@@ -736,6 +736,26 @@
             this.panel_Function.Name = "panel_Function";
             this.panel_Function.Size = new System.Drawing.Size(1478, 153);
             this.panel_Function.TabIndex = 15;
+            // 
+            // lbl_SubjectOption
+            // 
+            this.lbl_SubjectOption.AutoSize = true;
+            this.lbl_SubjectOption.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.lbl_SubjectOption.Location = new System.Drawing.Point(62, 83);
+            this.lbl_SubjectOption.Name = "lbl_SubjectOption";
+            this.lbl_SubjectOption.Size = new System.Drawing.Size(144, 24);
+            this.lbl_SubjectOption.TabIndex = 35;
+            this.lbl_SubjectOption.Text = "Filter by Subject";
+            // 
+            // cbb_Subject
+            // 
+            this.cbb_Subject.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cbb_Subject.FormattingEnabled = true;
+            this.cbb_Subject.ItemHeight = 24;
+            this.cbb_Subject.Location = new System.Drawing.Point(66, 110);
+            this.cbb_Subject.Name = "cbb_Subject";
+            this.cbb_Subject.Size = new System.Drawing.Size(179, 32);
+            this.cbb_Subject.TabIndex = 34;
             // 
             // label6
             // 
@@ -768,17 +788,17 @@
             // 
             this.lbl_Department.AutoSize = true;
             this.lbl_Department.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Department.Location = new System.Drawing.Point(76, 10);
+            this.lbl_Department.Location = new System.Drawing.Point(62, 7);
             this.lbl_Department.Name = "lbl_Department";
-            this.lbl_Department.Size = new System.Drawing.Size(183, 24);
+            this.lbl_Department.Size = new System.Drawing.Size(178, 24);
             this.lbl_Department.TabIndex = 28;
-            this.lbl_Department.Text = "Filter by Department:";
+            this.lbl_Department.Text = "Filter by Department";
             // 
             // cbb_Deparment
             // 
             this.cbb_Deparment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbb_Deparment.FormattingEnabled = true;
-            this.cbb_Deparment.Location = new System.Drawing.Point(80, 37);
+            this.cbb_Deparment.Location = new System.Drawing.Point(66, 37);
             this.cbb_Deparment.Name = "cbb_Deparment";
             this.cbb_Deparment.Size = new System.Drawing.Size(179, 32);
             this.cbb_Deparment.TabIndex = 27;
@@ -787,7 +807,7 @@
             // 
             this.label_ClusterAmount.AutoSize = true;
             this.label_ClusterAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_ClusterAmount.Location = new System.Drawing.Point(17, 78);
+            this.label_ClusterAmount.Location = new System.Drawing.Point(339, 50);
             this.label_ClusterAmount.Name = "label_ClusterAmount";
             this.label_ClusterAmount.Size = new System.Drawing.Size(139, 24);
             this.label_ClusterAmount.TabIndex = 19;
@@ -798,7 +818,7 @@
             this.radioButton_KmeanPlusPlus.AutoSize = true;
             this.radioButton_KmeanPlusPlus.Checked = true;
             this.radioButton_KmeanPlusPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_KmeanPlusPlus.Location = new System.Drawing.Point(407, 91);
+            this.radioButton_KmeanPlusPlus.Location = new System.Drawing.Point(493, 88);
             this.radioButton_KmeanPlusPlus.Name = "radioButton_KmeanPlusPlus";
             this.radioButton_KmeanPlusPlus.Size = new System.Drawing.Size(116, 28);
             this.radioButton_KmeanPlusPlus.TabIndex = 18;
@@ -810,7 +830,7 @@
             // 
             this.radioButton_Kmean.AutoSize = true;
             this.radioButton_Kmean.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton_Kmean.Location = new System.Drawing.Point(407, 30);
+            this.radioButton_Kmean.Location = new System.Drawing.Point(493, 48);
             this.radioButton_Kmean.Name = "radioButton_Kmean";
             this.radioButton_Kmean.Size = new System.Drawing.Size(94, 28);
             this.radioButton_Kmean.TabIndex = 17;
@@ -821,7 +841,7 @@
             // 
             this.numericUpDown_ClusterAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericUpDown_ClusterAmount.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown_ClusterAmount.Location = new System.Drawing.Point(44, 105);
+            this.numericUpDown_ClusterAmount.Location = new System.Drawing.Point(343, 83);
             this.numericUpDown_ClusterAmount.Maximum = new decimal(new int[] {
             10,
             0,
@@ -845,7 +865,7 @@
             this.btn_Kmean.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Kmean.Image = global::Do_An_1.Properties.Resources.icons8_bullish_70px;
             this.btn_Kmean.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Kmean.Location = new System.Drawing.Point(549, 37);
+            this.btn_Kmean.Location = new System.Drawing.Point(615, 44);
             this.btn_Kmean.Name = "btn_Kmean";
             this.btn_Kmean.Size = new System.Drawing.Size(197, 72);
             this.btn_Kmean.TabIndex = 15;
@@ -997,30 +1017,12 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "Professor Name";
             // 
-            // cbb_Subject
-            // 
-            this.cbb_Subject.FormattingEnabled = true;
-            this.cbb_Subject.Location = new System.Drawing.Point(188, 113);
-            this.cbb_Subject.Name = "cbb_Subject";
-            this.cbb_Subject.Size = new System.Drawing.Size(121, 21);
-            this.cbb_Subject.TabIndex = 34;
-            // 
-            // lbl_SubjectOption
-            // 
-            this.lbl_SubjectOption.AutoSize = true;
-            this.lbl_SubjectOption.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lbl_SubjectOption.Location = new System.Drawing.Point(184, 78);
-            this.lbl_SubjectOption.Name = "lbl_SubjectOption";
-            this.lbl_SubjectOption.Size = new System.Drawing.Size(134, 24);
-            this.lbl_SubjectOption.TabIndex = 35;
-            this.lbl_SubjectOption.Text = "Subject Option";
-            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1725, 861);
+            this.ClientSize = new System.Drawing.Size(1725, 860);
             this.Controls.Add(this.TabControl_Main);
             this.Controls.Add(this.panel_Navigation);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;

@@ -29,7 +29,6 @@ namespace Do_An_1
             this.LoginStatus = loginStatus;
             this.ProfessorID = professorID;
         }
-        
         #region Control Tool
         private void Form1_Load(object sender, EventArgs e)
         {

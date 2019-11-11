@@ -1,0 +1,12 @@
+Nếu ứng dụng không chạy được do không thể kết nối cơ sở dữ liệu được, vui lòng thay đổi connection string trong app.config 
+ở mục dataspource từ (local) thành tên của SQL server trong máy ( ví dụ DESKTOP-H8G42RV )
+
+Ở lần khởi chạy đầu tiên sẽ hơi lâu 1 chút vì ứng dụng sẽ khởi tạo cơ sở dữ liệu.
+
+Tài khoản Login quyền Admin:
+ID: 1120
+Password: 10000020
+
+Tài khoản Login quyền Admin:
+ID: 1115
+Password: 10000015

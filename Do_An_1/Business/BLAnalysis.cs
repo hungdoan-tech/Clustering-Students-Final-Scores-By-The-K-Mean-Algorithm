@@ -140,7 +140,6 @@ namespace Do_An_1.Business
             }
             return;
         }
-
         public int Kmean(bool IsKmeanPlusPlus,string DepartmentName,string SubjectName, int ProfessorID)
         {
             using (var ctx = new UniversityContext())

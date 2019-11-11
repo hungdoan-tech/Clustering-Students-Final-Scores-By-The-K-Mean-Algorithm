@@ -145,3 +145,4 @@ C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\obj\Debug\Do_An_1.DetailForm.resources
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\obj\Debug\Do_An_1.Main_Form.resources
 C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\obj\Debug\Do_An_1.Login_Form.resources
+C:\Users\hungd\Documents\GitHub\The-problem-of-classifying-students-final-scores-by-the-K-mean-algorithm\Do_An_1\obj\Debug\Do_An_1.csprojAssemblyReference.cache

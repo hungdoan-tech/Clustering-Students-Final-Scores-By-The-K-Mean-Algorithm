@@ -63,6 +63,9 @@ namespace Do_An_1
                 if (professor.IsAdmin == false)
                 {
                     lbl_Permision.Text = "Professor";
+                    btn_Browse.Enabled = false;
+                    btn_OK.Enabled = false;
+                    txb_Path.Enabled = false;
                 }
                 else
                 {
@@ -89,6 +92,7 @@ namespace Do_An_1
 
             if (LoginStatus == 1)
             {
+                lbl_Department.Enabled = false;
                 cbb_Deparment.Enabled = false;      
             }
             else
